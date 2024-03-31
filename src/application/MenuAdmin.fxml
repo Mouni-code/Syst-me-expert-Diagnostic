@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuAdminController">
+   <right>
+      <AnchorPane prefHeight="314.0" prefWidth="305.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="61.0" layoutY="14.0" text="Modification de règles">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="choixProblemeModification" layoutX="148.0" layoutY="55.0" prefWidth="150.0" />
+            <Label layoutX="6.0" layoutY="59.0" text="Choix de fait à modifier" />
+            <Label layoutX="14.0" layoutY="97.0" text="Remplacer par : " />
+            <TextField fx:id="textFieldNouveauProbleme" layoutX="107.0" layoutY="93.0" />
+            <Button fx:id="boutonModification" layoutX="215.0" layoutY="248.0" mnemonicParsing="false" onAction="#edit" style="-fx-background-color: #c930a3;" text="Modifier" textFill="WHITE" />
+            <Label layoutX="6.0" layoutY="139.0" text="Choix de cause à modifier" />
+            <ChoiceBox fx:id="choixCauseModification" layoutX="148.0" layoutY="135.0" prefWidth="150.0" />
+            <Label layoutX="14.0" layoutY="179.0" text="Remplacer par : " />
+            <TextField fx:id="textFieldNouvelleCause" layoutX="108.0" layoutY="175.0" />
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <AnchorPane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="230.0" layoutY="1.0" prefHeight="54.0" prefWidth="194.0" text="GESTION" textFill="#c930a3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="menuUserGo" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#goToMenuUser" style="-fx-background-color: #c930a3;" text="MenuUser" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="29.0" prefWidth="600.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="437.0" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: #c930a3;" text="Appliquer les modifications" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="316.0" prefWidth="290.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="90.0" layoutY="14.0" text="Ajout de règles">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="62.0" layoutY="197.0" text="Suppression de règles">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="63.0" text="Ajouter un fait" />
+            <TextField fx:id="textFieldProblemeAjout" layoutX="128.0" layoutY="59.0" />
+            <Label layoutX="14.0" layoutY="247.0" text="Supprimer un fait" />
+            <Label layoutX="14.0" layoutY="104.0" text="Ajouter sa cause" />
+            <TextField fx:id="textFieldCauseAjout" layoutX="129.0" layoutY="100.0" />
+            <ChoiceBox fx:id="choixProblemeSuppression" layoutX="129.0" layoutY="243.0" prefWidth="150.0" />
+            <Button fx:id="boutonAjout" layoutX="227.0" layoutY="147.0" mnemonicParsing="false" onAction="#add" style="-fx-background-color: #c930a3;" text="Ajouter" textFill="WHITE" />
+            <Button fx:id="boutonSuppression" layoutX="211.0" layoutY="290.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #c930a3;" text="Supprimer" textFill="#fffdfd" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="314.0" prefWidth="14.0" style="-fx-background-color: #f7a2e6;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

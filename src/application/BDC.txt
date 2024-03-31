@@ -1,0 +1,32 @@
+L'ordinateur est lent :
+Le disque dur est saturé
+Le disque dur est fragmenté
+L'ordinateur est infecté par un virus
+
+L'ordinateur ne s'allume plus:
+L'alimentation est en panne
+La carte mère est en panne
+La batterie est morte
+L'interrupteur boîtier est défaillant
+L'alimentation est faible
+
+L'ordinateur chauffe:
+Le radiateur de refroidissement est défaillant
+
+L'écran est noir:
+La carte mère est en panne
+L'alimentation est en panne
+La mémoire est saturée
+Le processeur est faible/défaillant
+Des mises à jour manquées
+
+L'écran est bleu:
+Le matériel est en panne
+Le logiciel est en panne
+Ça vient de Windows
+
+L'écran est figé:
+Une barrette mémoire est défaillante
+
+
+Des pibs sonores lors du démarrage:
